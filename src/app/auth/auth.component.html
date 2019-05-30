@@ -1,0 +1,27 @@
+<nav class="navbar navbar-light bg-light" style="margin-bottom: 0px;">
+    <span class="navbar-brand mb-0 h1">Routing Angular</span>
+</nav>
+<div class="wrapper">
+
+    <nav id="sidebar">
+
+        <ul class="list-unstyled components">
+            <li class="active">
+                <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Dashbord admin</a>
+                <ul class="collapse list-unstyled" id="homeSubmenu">
+                    <li>
+
+                        <a [routerLink]="['/auth/Login']">Login</a>
+                    </li>
+                    <li>
+                        <a [routerLink]="['/auth/Register']">Register</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div class="content">
+        <router-outlet></router-outlet>
+    </div>
+
+</div>
